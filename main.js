@@ -1,7 +1,7 @@
 let shop = document.getElementById('shop');
 
 let generateShop = () => {
-    return `
+    return shop.innerHTML = `
     <div class="item">
         <img width="220" src="images/img-1.jpg" alt="">
         <div class="details">
