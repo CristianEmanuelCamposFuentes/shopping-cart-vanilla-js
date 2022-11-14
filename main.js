@@ -1,5 +1,35 @@
 let shop = document.getElementById('shop');
 
+let shoopItemsData = [{
+    id: "one",
+    name: "Casual Shirt",
+    price: 45,
+    desc: "Lorem impsum",
+    img: "images/img-1.jpg"
+    },
+    {
+        id: "one",
+        name: "Casual Shirt",
+        price: 45,
+        desc: "Lorem impsum",
+        img: "images/img-1.jpg"
+    },
+    {
+        id: "one",
+        name: "Casual Shirt",
+        price: 45,
+        desc: "Lorem impsum",
+        img: "images/img-1.jpg"
+    },
+    {
+        id: "one",
+        name: "Casual Shirt",
+        price: 45,
+        desc: "Lorem impsum",
+        img: "images/img-1.jpg"
+    }
+];
+
 let generateShop = () => {
     return shop.innerHTML = `
     <div class="item">
