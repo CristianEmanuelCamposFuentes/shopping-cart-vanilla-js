@@ -1,32 +1,32 @@
 let shop = document.getElementById('shop');
 
 let shoopItemsData = [{
-    id: "one",
+    id: Date.now(),
     name: "Casual Shirt",
     price: 45,
-    desc: "Lorem impsum",
+    desc: "Lorem impsum dolor sit amet",
     img: "images/img-1.jpg"
     },
     {
-        id: "one",
-        name: "Casual Shirt",
-        price: 45,
-        desc: "Lorem impsum",
-        img: "images/img-1.jpg"
+        id: Date.now(),
+        name: "Office Shirt",
+        price: 55,
+        desc: "Lorem impsum dolor sit amet",
+        img: "images/img-2.jpg"
     },
     {
-        id: "one",
-        name: "Casual Shirt",
-        price: 45,
-        desc: "Lorem impsum",
-        img: "images/img-1.jpg"
+        id: Date.now(),
+        name: "T Shirt",
+        price: 35,
+        desc: "Lorem impsum dolor sit amet",
+        img: "images/img-3.jpg"
     },
     {
-        id: "one",
-        name: "Casual Shirt",
-        price: 45,
-        desc: "Lorem impsum",
-        img: "images/img-1.jpg"
+        id: Date.now(),
+        name: "Mens Suit",
+        price: 450,
+        desc: "Lorem impsum dolor sit amet",
+        img: "images/img-4.jpg"
     }
 ];
 
