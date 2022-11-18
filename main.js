@@ -4,28 +4,28 @@ let shoopItemsData = [{
     id: Date.now(),
     name: "Casual Shirt",
     price: 45,
-    desc: "Lorem impsum dolor sit amet",
+    desc: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
     img: "images/img-1.jpg"
     },
     {
         id: Date.now(),
         name: "Office Shirt",
         price: 55,
-        desc: "Lorem impsum dolor sit amet",
+        desc: "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain",
         img: "images/img-2.jpg"
     },
     {
         id: Date.now(),
         name: "T Shirt",
         price: 35,
-        desc: "Lorem impsum dolor sit amet",
+        desc: "Sed ante lacus, posuere sit amet justo sed, ultrices imperdiet nulla. Quisque aliquam rhoncus elit, in congue velit elementum et",
         img: "images/img-3.jpg"
     },
     {
         id: Date.now(),
         name: "Mens Suit",
         price: 450,
-        desc: "Lorem impsum dolor sit amet",
+        desc: "Nunc in lectus sollicitudin, porttitor augue consectetur, aliquam eros. Nullam et pharetra ex, id pretium nisl",
         img: "images/img-4.jpg"
     }
 ];
