@@ -1,28 +1,28 @@
 let shop = document.getElementById('shop');
 
-let shoopItemsData = [{
-    id: Math.ceil(Math.random()*1000000),
+let shopItemsData = [{
+    id: 'uno',
     name: "Casual Shirt",
     price: 45,
     desc: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit",
     img: "images/img-1.jpg"
     },
     {
-        id: Math.ceil(Math.random()*1000000),
+        id: 'dos',
         name: "Office Shirt",
         price: 55,
         desc: "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain",
         img: "images/img-2.jpg"
     },
     {
-        id: Math.ceil(Math.random()*1000000),
+        id: 'tres',
         name: "T Shirt",
         price: 35,
         desc: "Sed ante lacus, posuere sit amet justo sed, ultrices imperdiet nulla. Quisque aliquam rhoncus elit, in congue velit elementum et",
         img: "images/img-3.jpg"
     },
     {
-        id: Math.ceil(Math.random()*1000000),
+        id: 'cuatro',
         name: "Mens Suit",
         price: 450,
         desc: "Nunc in lectus sollicitudin, porttitor augue consectetur, aliquam eros. Nullam et pharetra ex, id pretium nisl",
@@ -33,8 +33,8 @@ let shoopItemsData = [{
 let basket = [];
 
 let generateShop = () => {
-    return (shop.innerHTML = shoopItemsData.map((product) =>{
-        let {id, name, price, desc, img} = product;
+    return (shop.innerHTML = shopItemsData.map((x) =>{
+        let {id, name, price, desc, img} = x;
         
         return  `
         <div id="product-id-${id} "class="item">
@@ -61,8 +61,9 @@ generateShop();
 
 let increment = (id) => {
     let selectedItem = id;
+    console.log(selectedItem);
     let search = basket.find((x)=> x.id === selectedItem.id);
-
+    console.log(search);
     if(search === undefined){
         basket.push({
             id: selectedItem,
