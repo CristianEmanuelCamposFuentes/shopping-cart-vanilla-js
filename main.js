@@ -53,20 +53,21 @@ let generateShop = () => {
             </div>
         </div>
     
-        `
-    }).join(""));
+        `;
+    })
+    .join(""));
 };
 
 generateShop();
 
 let increment = (id) => {
     let selectedItem = id;
-    console.log(selectedItem);
+    // console.log(id);
     let search = basket.find((x)=> x.id === selectedItem.id);
-    console.log(search);
+    // console.log(search);
     if(search === undefined){
         basket.push({
-            id: selectedItem,
+            id: selectedItem.id,
             item: 1
         });
     } else {
