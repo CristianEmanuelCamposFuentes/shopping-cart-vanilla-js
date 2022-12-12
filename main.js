@@ -100,4 +100,11 @@ let update = (id) => {
     let search = basket.find((x) => x.id === id);
     // console.log(search.item);
     document.getElementById(id).innerText = search.item;
+    calculation();
+};
+
+let calculation = () => {
+    let cartIcon = document.getElementById("cartAmount");
+    cartIcon.innerText = basket.map(num => num.item).reduce((accum, next) => accum + next, 0);
+
 }
