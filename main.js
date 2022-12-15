@@ -84,9 +84,8 @@ let decrement = (id) => {
     // console.log(id);
     let search = basket.find((x)=> x.id === selectedItem.id);
     // console.log(search);
-    if(search.item === 0){
-        return;
-    } else {
+    if(search.item === 0) return;
+    else {
         search.item -= 1;
     }
 
