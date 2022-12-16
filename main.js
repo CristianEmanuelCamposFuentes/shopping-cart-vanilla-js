@@ -74,7 +74,7 @@ let increment = (id) => {
         search.item += 1;
     }
 
-    
+    localStorage.setItem('data', JSON.stringify(basket) );
     // console.log(basket);
     update(selectedItem.id);
 }
@@ -89,6 +89,7 @@ let decrement = (id) => {
         search.item -= 1;
     }
 
+    localStorage.setItem('data', JSON.stringify(basket) );
     
     // console.log(basket);
     update(selectedItem.id);
