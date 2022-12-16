@@ -92,8 +92,7 @@ let decrement = (id) => {
     
     // console.log(basket);
     update(selectedItem.id);
-
-}
+};
 
 let update = (id) => {
     let search = basket.find((x) => x.id === id);
@@ -104,6 +103,6 @@ let update = (id) => {
 
 let calculation = () => {
     let cartIcon = document.getElementById("cartAmount");
-    cartIcon.innerText = basket.map(num => num.item).reduce((accum, next) => accum + next, 0);
+    cartIcon.innerText = basket.map(tShirts => tShirts.item).reduce((accum, next) => accum + next, 0);
+};
 
-}
